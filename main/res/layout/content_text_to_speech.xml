@@ -7,33 +7,23 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:showIn="@layout/activity_main" tools:context=".MainActivity">
-
-    <TextView
-        android:id="@+id/textName"
-        android:text="@string/textview_prompt1"
-        android:textSize="@dimen/large_text"
-        android:layout_width="match_parent"
-        android:layout_centerHorizontal="true"
-        android:layout_height="wrap_content" />
-
-    <EditText
-        android:id="@+id/editText2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/textName"
-        android:layout_centerHorizontal="true"
-        android:textAlignment="center"
-        android:textSize="@dimen/medium_text"/>
+    tools:showIn="@layout/activity_text_to_speech"
+    tools:context="com.example.liam.speak.SpeakActivity">
 
     <Button
-        android:id="@+id/button2"
-        android:layout_below="@id/editText2"
-        android:text="@string/button_string2"
+        android:id="@+id/button1"
+        android:text="@string/button_string1"
         android:textSize="@dimen/large_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"/>
+        android:layout_centerHorizontal="true"/>
 
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button1"
+        android:textAlignment="center"
+        android:textSize="@dimen/medium_text"/>
 
 </RelativeLayout>
